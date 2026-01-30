@@ -1,0 +1,35 @@
+.hero {
+  padding: 80px;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.boxes {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #000;
+
+  &.a {
+    background-color: aquamarine;
+  }
+
+  &.b {
+    background-color: coral;
+  }
+
+  &.c {
+    background-color: cornflowerblue;
+  }
+}
