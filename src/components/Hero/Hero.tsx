@@ -5,32 +5,39 @@ import gsap from 'gsap';
 import styles from './Hero.module.scss';
 
 export default function Hero() {
-  const titleRef = useRef<HTMLHeadingElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      if (!titleRef.current) return;
-
       const tl = gsap.timeline();
 
-      tl.from(titleRef.current, {
-        y: 60,
+      tl.from(`.${styles.title}`, {
+        y: 40,
         opacity: 0,
         duration: 0.8,
         ease: 'power3.out',
-      });
-
-      tl.from(
-        `.${styles.box}`,
+      })
+      .from(
+        `.${styles.subtitle}`,
+        {
+          y: 20,
+          opacity: 0,
+          duration: 0.6,
+          ease: 'power3.out',
+        },
+        '-=0.4'
+      )
+      .from(
+        `.${styles.card}`,
         {
           y: 40,
           opacity: 0,
+          scale: 0.95,
+          duration: 0.8,
+          ease: 'power3.out',
           stagger: 0.15,
-          duration: 0.6,
-          ease: 'power2.out',
         },
-        '-=0.2'
+        '-=0.3'
       );
     }, containerRef);
 
@@ -39,14 +46,18 @@ export default function Hero() {
 
   return (
     <section ref={containerRef} className={styles.hero}>
-      <h1 ref={titleRef} className={styles.title}>
+      <h1 className={styles.title}>
         Creative Front Developer
       </h1>
 
-      <div className={styles.boxes}>
-        <div className={`${styles.box} ${styles.a}`}>a</div>
-        <div className={`${styles.box} ${styles.b}`}>b</div>
-        <div className={`${styles.box} ${styles.c}`}>c</div>
+      <p className={styles.subtitle}>
+        UI / UX – Motion – Interaction
+      </p>
+
+      <div className={styles.cards}>
+        <div className={styles.card}>Motion</div>
+        <div className={styles.card}>UI</div>
+        <div className={styles.card}>Code</div>
       </div>
     </section>
   );

@@ -7,6 +7,10 @@
   margin-bottom: 40px;
 }
 
+.subtitle {
+  color: lime;
+}
+
 .boxes {
   display: flex;
   gap: 20px;
@@ -31,5 +35,38 @@
 
   &.c {
     background-color: cornflowerblue;
+  }
+
+  &.d {
+    background-color: rgb(203, 117, 200);
+  }
+
+  &.e {
+    background-color: rgb(234, 164, 51);
+  }
+
+  &.f {
+    background-color: rgb(34, 209, 233);
+  }
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: chartreuse;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+
+  .card {
+    width: 200px;
+    height: 300px;
+    border-radius: 24px;
+    background-color: aliceblue;
+    border: 1px solid #fefefe;
+    align-items: center;
+    text-align: center;
   }
 }
