@@ -7,7 +7,9 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <div className={styles.intro}>
+          <section style={{ height: '100vh' }} />
           <Hero />
+          <section style={{ height: '200vh' }} />
         </div>
       </main>
     </div>
