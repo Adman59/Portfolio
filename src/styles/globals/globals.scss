@@ -1,0 +1,27 @@
+@use 'reset';
+@use 'variables';
+@use 'typography';
+@use 'base';
+
+:root {
+  /* Brand */
+  --color-violet: rgb(109, 66, 235);
+  --color-deep-violet: rgb(62, 37, 133);
+
+  /* Greens */
+  --color-green: rgb(176, 241, 176);
+  --color-green-dark: rgb(15, 32, 39);
+  --color-green-medium: rgb(32, 58, 67);
+  --color-green-low: rgb(44, 83, 100);
+
+  /* Blues */
+  --color-blue-deep: rgb(3, 0, 30);
+  --color-blue-ocean: rgb(143, 167, 237);
+
+  /* Neutrals */
+  --color-white: rgb(255, 255, 255);
+  --color-white-low: rgb(243, 243, 243);
+  --color-black: rgb(30, 30, 30);
+  --color-black-print: rgb(0, 0, 0);
+  --color-text-gray: rgb(136, 136, 136);
+}
