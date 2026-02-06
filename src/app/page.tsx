@@ -5,9 +5,7 @@ export default function Home() {
   return (
     <main>
       <div>
-        <section style={{ height: '100vh' }} />
         <Hero />
-        <section style={{ height: '200vh' }} />
       </div>
     </main>
   );
