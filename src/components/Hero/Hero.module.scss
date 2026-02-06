@@ -16,3 +16,10 @@
   align-items: center;
   gap: var(--space-lg);
 }
+
+.badge {
+  background-color: var(--color-yellow);
+  padding: var(--space-xs) var(--space-md);
+  color: var(--color-black);
+  border-radius: var(--border-radius-lg);
+}

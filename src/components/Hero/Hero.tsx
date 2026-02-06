@@ -15,6 +15,9 @@ export default function Hero() {
               width={150}
               height={150}
             />
+            <div className={styles.badge}>
+              Développeur Front-end & UI Designer
+            </div>
           </div>
 
           <div className={styles.content}>
