@@ -4,8 +4,8 @@ import styles from './About.module.scss';
 export default function About() {
   return (
     <section className={`${styles.hero} container`}>
-      <div>
-        <p>
+      <div className={`grid`}>
+        <p className={`${styles.intro}`}>
           Développeur front-end passionné, spécialisé dans la création
           d’interfaces modernes et intuitives, avec une solide expérience en
           React et une forte appétence pour l’UI/UX design. Curieux et
