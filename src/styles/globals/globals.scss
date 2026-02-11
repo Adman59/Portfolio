@@ -2,6 +2,7 @@
 @use 'variables';
 @use 'typography';
 @use 'base';
+@use '../tools/mixins' as *;
 
 :root {
   /* Brand */
@@ -78,8 +79,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(var(--grid-columns), 1fr);
-  column-gap: var(--grid-gutter);
+  grid-template-columns: 1fr;
+  row-gap: var(--space-xl);
 }
 
 .col-1 {
@@ -119,8 +120,9 @@
   grid-column: span 12;
 }
 
-@media (max-width: 768px) {
+@include respond(lg) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    column-gap: var(--grid-gutter);
   }
 }

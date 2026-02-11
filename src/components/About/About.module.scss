@@ -1,4 +1,11 @@
 .intro {
-  display: flex;
   grid-column: 4 / -4;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-loose);
+  color: var(--color-text-gray);
+
+  .word {
+    color: var(--color-text-gray);
+    display: inline-block;
+  }
 }

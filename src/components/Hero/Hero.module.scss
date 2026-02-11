@@ -22,4 +22,7 @@
   padding: var(--space-xs) var(--space-md);
   color: var(--color-black);
   border-radius: var(--border-radius-lg);
+  transform: rotate(3deg);
+  position: relative;
+  bottom: 32px;
 }

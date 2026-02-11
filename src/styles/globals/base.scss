@@ -4,8 +4,8 @@ body {
 }
 
 body {
-  background: #0a0a0a;
-  color: white;
+  background: var(--color-white);
+  color: var(--color-black);
 }
 
 /* Important pour animations */
