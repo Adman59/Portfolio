@@ -1,0 +1,27 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: var(--space-md);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text-gray);
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--color-black);
+}
+
+.active {
+  color: var(--color-violet);
+}
