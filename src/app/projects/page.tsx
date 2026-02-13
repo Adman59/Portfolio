@@ -11,6 +11,12 @@ export default function ProjectsPage() {
           </li>
         ))}
       </ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+        accusamus doloribus recusandae! Minima ea culpa impedit debitis
+        molestias dolores quaerat facere qui, quod reiciendis exercitationem,
+        neque corporis? Doloribus, quibusdam iure?
+      </p>
     </section>
   );
 }

@@ -1,0 +1,23 @@
+.list {
+  padding: 0;
+
+  li {
+    list-style-type: none;
+    padding: var(--space-md) 0;
+    border-bottom: 2px solid var(--color-white-low);
+
+    .swipeImage {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 9;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+}
